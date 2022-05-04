@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "937625438652",
+    "project_id": "proboost-57bbf",
+    "storage_bucket": "proboost-57bbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937625438652:android:a7eb356f8825e1b3be43b9",
+        "android_client_info": {
+          "package_name": "com.example.proboost"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937625438652-g3p57opvb0ra0boff6231od779opu8fh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proboost",
+            "certificate_hash": "9513308e67a5460194d124b9891c642423554a7e"
+          }
+        },
+        {
+          "client_id": "937625438652-ppdp5iet1gb480hvclvnmpduonsf9jim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLAGn2EQqVFK6jUjZDVFo0oTsVv5zjww4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937625438652-ppdp5iet1gb480hvclvnmpduonsf9jim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
