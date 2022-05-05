@@ -2,6 +2,7 @@ package com.example.proboost;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -20,6 +21,7 @@ public class PostJobActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                startActivity(new Intent(getApplicationContext(),InsertJobPostActivity.class));
             }
         });
     }

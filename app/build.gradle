@@ -50,6 +50,12 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
   //  implementation 'com.facebook.android:facebook-android-sdk:5.13.0'
 
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-core:11.0.4'
+    implementation 'com.google.firebase:firebase-firestore'
+
+
+
     //noinspection GradleCompatible
 
 

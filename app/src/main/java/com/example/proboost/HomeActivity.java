@@ -14,7 +14,7 @@ public class HomeActivity extends AppCompatActivity {
     private Button btnPostJob;
 
     //toolbar
-    private Toolbar toolbar;
+ //   private Toolbar toolbar;
 
 
     @Override
@@ -24,10 +24,10 @@ public class HomeActivity extends AppCompatActivity {
 
         btnAllJob=findViewById(R.id.btn_allJobs);
         btnPostJob=findViewById(R.id.btn_postJob);
-        toolbar=findViewById(R.id.toolbar_home);
-        setSupportActionBar(toolbar);
+      //  toolbar=findViewById(R.id.toolbar_home);
+    //    setSupportActionBar(toolbar);
 
-        getSupportActionBar().setTitle("Proboost");
+      //  getSupportActionBar().setTitle("Proboost");
 
 
         btnAllJob.setOnClickListener(new View.OnClickListener() {

@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:background="@drawable/button_design"
+                android:background="@drawable/job_post_button"
                 android:padding="15dp"
                 android:textColor="@color/white"
                 android:text="Registation"
@@ -78,9 +78,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
 
-                android:background="@drawable/button_design"
+                android:background="@drawable/job_post_button"
                 android:padding="15dp"
                 android:text="Log in"
+                android:textColor="@color/white"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:id="@+id/btn_login"
                 />
