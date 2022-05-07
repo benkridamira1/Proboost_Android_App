@@ -23,6 +23,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+
                 android:id="@+id/recycler_job_post_id">
 
             </androidx.recyclerview.widget.RecyclerView>
@@ -36,7 +37,7 @@
             android:layout_gravity="bottom|end"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="25dp"
-            android:backgroundTint="@color/fabvolor"
+            android:backgroundTint="#FF03DAC5"
             android:src="@drawable/add"
             app:fabSize="normal"
 
