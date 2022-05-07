@@ -94,7 +94,7 @@ public class PostJobActivity extends AppCompatActivity {
 
 
                 viewHolder.setJobTitle(model.getTitle());
-                viewHolder.setJobDate(model.getDate());
+               // viewHolder.setJobDate(model.getDate());
                 viewHolder.setJobDescription(model.getDescription());
                 viewHolder.setJobSkills(model.getSkills());
                 viewHolder.setJobSalary(model.getSalary());
@@ -107,7 +107,7 @@ public class PostJobActivity extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(), JobDetailsActivity.class);
 
                         intent.putExtra("title",model.getTitle());
-                        intent.putExtra("date", model.getDate());
+                      //  intent.putExtra("date", model.getDate());
                         intent.putExtra("description",model.getDescription());
                         intent.putExtra("skills",model.getSkills());
                         intent.putExtra("salary",model.getSalary());
@@ -170,10 +170,10 @@ public class PostJobActivity extends AppCompatActivity {
             mTitle.setText(title);
         }
 
-        public void setJobDate(String date){
+       /* public void setJobDate(String date){
             TextView mDate=myview.findViewById(R.id.job_date);
             mDate.setText(date);
-        }
+        }*/
 
         public void setJobDescription(String description){
             TextView mDescription=myview.findViewById(R.id.job_description);

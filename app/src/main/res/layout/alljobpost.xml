@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="06 may,2021"
+            android:text="06 Aout,2021"
             android:textAppearance="?android:textAppearanceSmall"
             android:layout_margin="5dp"
             android:padding="5dp"

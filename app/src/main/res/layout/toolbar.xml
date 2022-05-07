@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/toolbar_color"
+    android:background="#FF03DAC5"
     android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
     app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar">
 
