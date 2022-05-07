@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proboost">
         <activity
+            android:name=".JobDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".InsertJobPostActivity"
             android:exported="false" />
         <activity

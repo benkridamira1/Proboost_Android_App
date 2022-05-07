@@ -29,6 +29,7 @@ public class PostJobActivity extends AppCompatActivity {
 
     //FireBase
 
+
     private FirebaseAuth mAuth;
     private DatabaseReference JobPostdatabase;
 
@@ -87,6 +88,25 @@ public class PostJobActivity extends AppCompatActivity {
                 viewHolder.setJobDescription(model.getDescription());
                 viewHolder.setJobSkills(model.getSkills());
                 viewHolder.setJobSalary(model.getSalary());
+
+
+                viewHolder.myview.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(getApplicationContext(), JobDetailsActivity.class);
+
+                        intent.putExtra("title",model.getTitle());
+                        intent.putExtra("date", model.getDate());
+                        intent.putExtra("description",model.getDescription());
+                        intent.putExtra("skills",model.getSkills());
+                        intent.putExtra("salary",model.getSalary());
+
+                        startActivity(intent);
+
+
+                    }
+                });
 
             }
 
