@@ -2,12 +2,15 @@ package com.example.proboost;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -26,6 +29,7 @@ public class PostJobActivity extends AppCompatActivity {
     private FloatingActionButton fabBtn;
     // recyler view
     private RecyclerView recyclerView;
+    private Toolbar toolbar;
 
     //FireBase
 
@@ -44,6 +48,12 @@ public class PostJobActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         FirebaseUser mUser=mAuth.getCurrentUser();
         String uId=mUser.getUid();
+
+
+        toolbar = findViewById(R.id.toolbar_post_job);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle("Job List");
 
         JobPostdatabase= FirebaseDatabase.getInstance().getReference()
                             .child("Job App").child(uId);
@@ -182,5 +192,29 @@ public class PostJobActivity extends AppCompatActivity {
 
 
 
+    }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.mainmenu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.logout:
+                mAuth.signOut();
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                break;
+
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
