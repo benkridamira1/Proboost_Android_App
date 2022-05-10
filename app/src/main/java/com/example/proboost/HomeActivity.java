@@ -83,4 +83,10 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
+    public void video(View view) {
+
+        startActivity(new Intent(getApplicationContext(), WebActivity.class));
+
+
+    }
 }

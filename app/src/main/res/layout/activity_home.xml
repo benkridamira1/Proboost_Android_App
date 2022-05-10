@@ -19,17 +19,18 @@
         android:gravity="center"
         android:orientation="vertical">
 
-  <!--      <Button
+        <Button
             android:id="@+id/btn_allJobs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/button_design"
-            android:text="See All Job Posts"
+            android:onClick="video"
+            android:text=" Védio chat"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/white">
 
-        </Button>-->
+        </Button>
 
         <Button
             android:layout_width="match_parent"
